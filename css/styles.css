@@ -53,28 +53,37 @@ header {
     gap: 1rem;
 } */
 
-.menu__link {
-    color: #000;
-    text-transform: capitalize;
-    background-color: #f0f0f0;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: 0.3s;
+.menu__item{
+    background-color:#f0f0f0;
+    width: 4.5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius: 8px;
+    transition: 0.4s;
 }
 
-.menu__link:hover {
-    background-color: #ed1b26;
+.menu__item:hover{
+    background-color:#ed1b26;
+    transform: scale(1.1);
+}
+
+.menu__link{
+    color: #000;
+    transition: 0.4s;
+}
+
+.menu__item:hover .menu__link{
     color: #fff;
 }
 
 .icon__item{
     background-color: #f0f0f0;
-    height: 2.5rem;
     width: 2.5rem;
+    height: 2.5rem;
     text-align: center;
     line-height: 2.5rem;
     border-radius: 50%;
-    cursor: pointer;
     transition: 0.4s;
 }
 
