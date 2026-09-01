@@ -27,8 +27,8 @@ header {
     background-color: #fff;
     /* To get sticky */
     position: sticky;
-    top:0;
-    
+    top: 0;
+
 }
 
 .logo__image {
@@ -53,8 +53,8 @@ header {
     gap: 1rem;
 } */
 
-.menu__item{
-    background-color:#f0f0f0;
+.menu__item {
+    background-color: #f0f0f0;
     width: 4.5rem;
     height: 2.5rem;
     text-align: center;
@@ -63,21 +63,21 @@ header {
     transition: 0.4s;
 }
 
-.menu__item:hover{
-    background-color:#ed1b26;
+.menu__item:hover {
+    background-color: #ed1b26;
     transform: scale(1.1);
 }
 
-.menu__link{
+.menu__link {
     color: #000;
     transition: 0.4s;
 }
 
-.menu__item:hover .menu__link{
+.menu__item:hover .menu__link {
     color: #fff;
 }
 
-.icon__item{
+.icon__item {
     background-color: #f0f0f0;
     width: 2.5rem;
     height: 2.5rem;
@@ -87,17 +87,17 @@ header {
     transition: 0.4s;
 }
 
-.icon__item:hover{
+.icon__item:hover {
     background-color: #ed1b26;
     transform: rotate(360deg);
 }
 
-.icon__link{
+.icon__link {
     color: #000;
     transition: 0.4s;
 }
 
-.icon__item:hover .icon__link{
+.icon__item:hover .icon__link {
     color: #fff;
 }
 
@@ -112,7 +112,66 @@ header {
 
 
 /* Footer Start */
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
 
+.footer__title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
 
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer__link {
+    color: #000;
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+.footer__link:hover {
+    color: #ed1b26;
+    /* transform: translate(5p 0); */
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.footer__list.social {
+    flex-direction: row;
+}
+
+.footer__link.facebook {
+    color: blue;
+}
+
+.footer__link.github {
+    color: black;
+}
+
+.footer__link.instagram {
+    color: purple
+}
+
+.footer__link.twitter {
+    color: blue;
+}
+
+.footer__link.telegram {
+    color: skyblue;
+}
+
+.footer__link.viber {
+    color: purple;
+}
 
 /* Footer End */
