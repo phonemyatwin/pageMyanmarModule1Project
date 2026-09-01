@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+main {
+    padding: 2rem 5%;
+}
+
 /* Header Start */
 
 header {
@@ -53,28 +57,26 @@ header {
     gap: 1rem;
 } */
 
-.menu__item {
+.menu__link {
+    display: inline-block;
+    color: #000;
+
+    text-transform: capitalize;
     background-color: #f0f0f0;
-    width: 4.5rem;
-    height: 2.5rem;
-    text-align: center;
-    line-height: 2.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
     transition: 0.4s;
 }
 
-.menu__item:hover {
+.menu__link:hover {
+    color: #fff;
     background-color: #ed1b26;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-.menu__link {
-    color: #000;
-    text-transform: capitalize;
-    transition: 0.4s;
-}
-
-.menu__item:hover .menu__link {
+.menu__link:hover,
+.menu__link.active {
+    background-color: #ed1b26;
     color: #fff;
 }
 
@@ -135,6 +137,7 @@ footer {
 
 .footer__link {
     color: #000;
+    display: inline-block;
     font-size: 1rem;
     text-transform: capitalize;
     transition: 0.4s;
@@ -142,13 +145,24 @@ footer {
 
 .footer__link:hover {
     color: #ed1b26;
-    /* transform: translate(5p 0); */
-    padding: 0.5rem;
-    letter-spacing: 1px;
+    /* padding: 0.5rem; */
+    transform: translate(0.5rem, 0);
+    letter-spacing: 2px;
 }
+
+
 
 .footer__list.social {
     flex-direction: row;
+}
+
+.footer__list.social .footer__link {
+    transition: 0.4s;
+    display: inline-block;
+}
+
+.footer__list.social .footer__link:hover{
+    transform: scale(1.5);
 }
 
 .footer__link.facebook {
