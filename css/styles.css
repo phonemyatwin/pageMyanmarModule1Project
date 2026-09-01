@@ -68,16 +68,11 @@ header {
     transition: 0.4s;
 }
 
-.menu__link:hover {
+.menu__link:hover,
+.menu__link.active {
     color: #fff;
     background-color: #ed1b26;
     transform: scale(1.05);
-}
-
-.menu__link:hover,
-.menu__link.active {
-    background-color: #ed1b26;
-    color: #fff;
 }
 
 .icon__item {
@@ -161,7 +156,7 @@ footer {
     display: inline-block;
 }
 
-.footer__list.social .footer__link:hover{
+.footer__list.social .footer__link:hover {
     transform: scale(1.5);
 }
 
