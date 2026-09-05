@@ -60,8 +60,33 @@
 
     <!-- Start of the main -->
     <main>
-        <h1>Register Page</h1>
+        <h3 class="page_title">register</h3>
 
+        <form class="form_container">
+            <div class="form_group">
+                <input type="text" placeholder="Enter your name" class="form_input">
+                <input type="email" placeholder="Enter your email" class="form_input">
+            </div>
+            <div class="form_group">
+                <input type="password" placeholder="Enter your password" class="form_input">
+                <input type="password" placeholder="Confirm your password" class="form_input">
+            </div>
+            <div class="form_group register">
+                <input type="number" placeholder="Enter your age" class="form_input">
+                <input type="date" class="form_input">
+                <input type="file" class="form_input">
+            </div>
+            <div class="form_group">
+                <input type="number" placeholder="Enter your phone number" class="form_input">
+                <input type="text" placeholder="Enter your NRC number" class="form_input">
+            </div>
+            <input type="text" placeholder="Enter your address" class="form_input">
+            <textarea placeholder="Enter your biography" class="form_input textarea"></textarea>
+            <div class="btn_group">
+                <button class="btn" onclick="window.location.href='login.html'">go back to login</button>
+                <button type="submit" class="btn">register</button>
+            </div>
+        </form>
     </main>
     <!-- End of the main -->
 
