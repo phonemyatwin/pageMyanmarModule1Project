@@ -219,7 +219,12 @@ header {
 /* End of the login page */
 
 /* Start of the register page */
+.form_container.register{
+    max-width: 900px;
+    margin: 0 auto;
+}
 .form_group.register{
+    /* display: flex; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
